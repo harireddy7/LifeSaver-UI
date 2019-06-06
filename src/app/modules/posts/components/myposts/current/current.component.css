@@ -1,0 +1,6 @@
+.card {
+  border-radius: 1.25rem !important;
+}
+.borderRadiusRem {
+  border-radius: 1.25rem 1.25rem 0 0 !important;
+}

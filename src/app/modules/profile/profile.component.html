@@ -1,0 +1,25 @@
+<div class="container marginBottom" style="margin-top: 20vh !important">
+  <div class="row justify-content-center mb-4">
+    <div class="col-sm-8">
+      <div class="card border-0 shadow-lg">
+        <div class="card-header borderRadiusRem side-heading text-light text-center bg-dark">Profile</div>
+        <div class="card-body">
+          <div class="prop">Name: <span class="value"> {{userdata.name | camelcase}} </span></div>
+          <div class="prop">Age: <span class="value"> {{userdata.age }} </span></div>
+          <div class="prop">Email: <span class="value"> {{userdata.email }} </span></div>
+          <div class="prop">Blood Group: <span class="value"> {{userdata.blood_group }} </span></div>
+          <div class="prop">Mobile: <span class="value"> {{userdata.mobile }} </span></div>
+          <div class="prop">Location: <span class="value"> {{userdata.location | camelcase}} </span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-sm-8">
+      <div class="d-flex flex-wrap flex-row mt-4">
+        <button class="btn btn-light flex-item flex-fill" (click)="logout()">Logout</button>
+        <button class="btn btn-light ml-1 flex-item flex-fill" (click)="logoutAll()">Logout Out of All</button>
+      </div>
+    </div>
+  </div>
+</div>

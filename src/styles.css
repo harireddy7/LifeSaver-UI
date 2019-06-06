@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
+html {
+  background-color: #800000;
+  height: 100%;
+}
+
+* {
+  font-family: 'Acme', sans-serif;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-main {
+  background-color: #800000;
+}
+
+.side-heading {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 20px;
+}
+
+.marginBottom {
+  margin-bottom: 5rem;
+}
+
+.snack-bar {
+  position: fixed;
+  bottom: 10vh;
+  left: 34vw;
+}
+
+/* :host .card {
+  border-radius: 2.25rem;
+} */
+
+.prop {
+  color: indigo;
+}
+.value {
+  color: green;
+}
+.card-body > .card.mb-4 {
+  border-radius: 2.25rem !important;
+}
+
+*:focus {
+  outline: none;
+}

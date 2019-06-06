@@ -1,0 +1,11 @@
+.d-flex {
+  background-color: #08131e;
+}
+
+.d-flex :hover {
+  background-color: #0c1722;
+}
+
+.activePage {
+  background-color: #0e1e2f;
+}

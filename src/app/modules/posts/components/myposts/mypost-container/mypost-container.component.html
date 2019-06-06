@@ -1,0 +1,20 @@
+
+<!-- <mat-tab-group [color]="'primary'" [backgroundColor]="'primary'" dynamicHeight="true" mat-stretch-tabs
+  class="example-stretched-tabs mat-elevation-z4">
+  <mat-tab label="Current">
+    <ng-template matTabContent>
+      <app-current></app-current>
+    </ng-template>
+  </mat-tab>
+  <mat-tab label="Resolved">
+    <ng-template matTabContent>
+      <app-resolved></app-resolved>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group> -->
+
+<app-navbar [routeValues]="routeVals" [position]="'top'"></app-navbar>
+
+<div class="marginBottom" [style.marginTop]="'15vh'">
+  <router-outlet></router-outlet>
+</div>

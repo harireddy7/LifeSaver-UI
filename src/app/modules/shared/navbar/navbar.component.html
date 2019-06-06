@@ -1,0 +1,4 @@
+<div class="d-flex flex-row flex-wrap text-light text-center cursor-pointer fixed-{{position}}">
+  <div class="flex-item flex-fill p-3" routerLink="{{route.path}}" routerLinkActive="activePage"
+    *ngFor="let route of routeValues">{{route.title}}</div>
+</div>

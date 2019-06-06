@@ -1,0 +1,11 @@
+.headTitle {
+  background-color: #E4CCCC;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #EDDADA;
+  width: 100%;
+  padding: 5px;
+}

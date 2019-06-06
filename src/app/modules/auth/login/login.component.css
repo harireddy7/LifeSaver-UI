@@ -1,0 +1,24 @@
+.logContainer {
+  margin-top: 100px;
+}
+
+.regText {
+  padding: 7px;
+  text-align: center;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 20px;
+}
+
+
+/*
+@media screen and (max-width: 575px) {
+  .logContainer {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logContainer {
+    left: 12vw;
+  }
+} */

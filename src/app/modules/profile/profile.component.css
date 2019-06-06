@@ -1,0 +1,22 @@
+
+.card-body {
+  line-height: 40px;
+}
+
+.card {
+  border-radius: 1.25rem !important;
+}
+.borderRadiusRem {
+  border-radius: 1.25rem 1.25rem 0 0 !important;
+}
+
+@media screen and (min-width: 575px) and (max-width: 770px) {
+  .row {
+    width: 385px
+  }
+}
+/* @media screen and (max-width: 575px) {
+  .row {
+    max-width: 415px;
+  }
+} */

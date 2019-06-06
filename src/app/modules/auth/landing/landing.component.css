@@ -1,0 +1,61 @@
+.brandContainer {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #800000;
+  color: azure;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.tagline {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.jumbotron {
+  padding: 50px;
+}
+
+.btns {
+  position: fixed;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* #05386B */
+.regBtn {
+  font-weight: bold;
+  background-color: whitesmoke;
+  color: #254E58;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.logBtn {
+  font-weight: bold;
+  background-color:#4F4A41;
+  color: whitesmoke;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+
+@media screen and (max-width: 575px) {
+  .brand, .btns {
+      width: 85vw;
+  }
+}
+
+@media screen and (max-height: 400px) {
+  .btns {
+    top: 60vh;
+  }
+}

@@ -1,0 +1,22 @@
+<div class="container mt-5 marginBottom">
+    <div class="row justify-content-center align-items-center" *ngIf="isLoading">
+        <mat-spinner></mat-spinner>
+      </div>
+    <div class="row justify-content-center mb-4">
+      <div class="col-sm-7">
+        <div class="card border-0">
+          <div class="card-header borderRadiusRem text-center bg-dark text-light side-heading">Current</div>
+          <div class="card-body">
+            <div class="card mb-4 cursor-pointer shadow" *ngFor="let post of posts" (click)="openPost(post._id)">
+              <div class="card-body">
+                  <div class="prop p-1">Name: <span class="value"> {{post.creatorName | camelcase}} </span></div>
+                  <div class="prop p-1">Blood Group: <span class="value"> {{post.blood_group}} </span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- <app-navbar [routeValues]="routeVals" [position]="'top'"></app-navbar> -->

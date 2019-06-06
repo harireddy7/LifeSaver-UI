@@ -1,0 +1,12 @@
+
+.mat-tab-label-container {
+  background: #03031d;
+}
+
+:host /deep/ .mat-tab-group[mat-stretch-tabs] > .mat-tab-header .mat-tab-label {
+  background-color: #08131e;
+}
+
+:host /deep/ mat-tab-group[mat-stretch-tabs] > .mat-tab-header .mat-tab-label-active {
+  background-color: #08131e;
+}
