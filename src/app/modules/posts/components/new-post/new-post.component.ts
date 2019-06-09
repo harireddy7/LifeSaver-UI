@@ -26,7 +26,7 @@ export class NewPostComponent implements OnInit {
 
   postForm: FormGroup;
   ngOnInit() {
-    document.body.scrollTop = document.documentElement.scrollTop = 100;
+    // document.body.scrollTop = document.documentElement.scrollTop = 100;
     this.postForm = this.fb.group({
       blood_group: [null, Validators.required],
       location: this.fb.group({

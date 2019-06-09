@@ -67,6 +67,11 @@ export class PostComponent implements OnInit {
     }));
   }
 
+  makeEditable() {
+    this.isEditable = true;
+    document.body.scrollTop = document.documentElement.scrollTop = 515;
+  }
+
   resolve() {
     this.postService.resolvePost(this.actRoute.snapshot.paramMap.get('id')).subscribe(resp => {
       console.log(resp);
