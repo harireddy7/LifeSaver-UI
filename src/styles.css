@@ -33,20 +33,25 @@ html {
 .snack-bar {
   position: fixed;
   bottom: 10vh;
-  left: 34vw;
 }
 
-/* :host .card {
-  border-radius: 2.25rem;
-} */
+.mat-snack-bar-handset {
+  justify-content: center;
+}
+
+.mat-snack-bar-handset .mat-snack-bar-container {
+  max-width: 300px !important;
+}
 
 .prop {
   color: indigo;
 }
+
 .value {
   color: green;
 }
-.card-body > .card.mb-4 {
+
+.card-body>.card.mb-4 {
   border-radius: 2.25rem !important;
 }
 

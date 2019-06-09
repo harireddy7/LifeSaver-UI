@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
   login(f) {
     const user = f.value;
     this.matSnackBar.open('logging in...', '', {
-      panelClass: 'snack-bar'
+      panelClass: 'snack-bar',
     });
     this.auth.loginUser(user).subscribe((resp: { user: {}; token: string }) => {
         f.reset();
@@ -40,9 +40,9 @@ export class LoginComponent implements OnInit {
       },
       ({error}) => {
         console.log(error);
-        this.matSnackBar.open(error.error, '', {
+        this.matSnackBar.open( 'Invalid Credentials', '', {
           duration: 2000,
-          panelClass: 'snack-bar'
+          panelClass: 'snack-bar',
         });
       }
     );

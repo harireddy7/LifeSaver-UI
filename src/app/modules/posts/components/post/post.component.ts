@@ -1,4 +1,5 @@
-import { MatSnackBar } from '@angular/material';
+import { DialogBoxComponent } from './dialog-box/mat-dialog.component';
+import { MatSnackBar, MatDialog } from '@angular/material';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from './../../../auth/auth.service';
 import { PostResp } from './../../models/post-resp.model';
@@ -21,7 +22,8 @@ export class PostComponent implements OnInit {
     private auth: AuthService,
     private fb: FormBuilder,
     private router: Router,
-    private matSnackBar: MatSnackBar) { }
+    private matSnackBar: MatSnackBar,
+    private dialog: MatDialog) { }
 
   postData: PostResp;
   isLoading = true;
@@ -105,6 +107,15 @@ export class PostComponent implements OnInit {
   }
 
   delete () {
+    const dialogRef = this.dialog.open(DialogBoxComponent);
+    dialogRef.afterClosed().subscribe(result => {
+      if (result === true) {
+        this.deleteConfirmed();
+      }
+    });
+  }
+
+  deleteConfirmed () {
     this.postService.deletePost(this.actRoute.snapshot.paramMap.get('id')).subscribe(resp => {
       console.log(resp);
       this.router.navigate(['/posts/myposts/current']);

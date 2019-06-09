@@ -12,6 +12,8 @@ import { CurrentComponent } from './components/myposts/current/current.component
 import { MypostContainerComponent } from './components/myposts/mypost-container/mypost-container.component';
 import { ResolvedComponent } from './components/myposts/resolved/resolved.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
+import { MatDialogModule, MatButtonModule, MatCardModule } from '@angular/material';
+import { DialogBoxComponent } from './components/post/dialog-box/mat-dialog.component';
 
 @NgModule({
   declarations: [
@@ -20,19 +22,21 @@ import { TimelineComponent } from './components/timeline/timeline.component';
     ResolvedComponent,
     NewPostComponent,
     MypostContainerComponent,
-    PostComponent
+    PostComponent,
+    DialogBoxComponent
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
     SharedModule,
-    MatTabsModule, MatProgressSpinnerModule,
+    MatTabsModule, MatProgressSpinnerModule, MatDialogModule, MatButtonModule, MatCardModule,
     PostsRoutingModule
   ],
   exports: [
     TimelineComponent,
     CurrentComponent,
     ResolvedComponent
-  ]
+  ],
+  entryComponents: [DialogBoxComponent]
 })
 export class PostsModule { }
